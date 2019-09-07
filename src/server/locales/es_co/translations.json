@@ -1,0 +1,27 @@
+{
+  "TITLE_HELMET": "Conectate y viaja por todo el mundo con Aero Happy",
+  "SUB_TITLE_HELMET": "Aero Happy es la agencia líder en viajes de Colombia y Latinoamérica. Tiquetes, alojamientos, paquetes, actividades, alquiler de carros y mucho más.",
+  "AERO_HAPPY": "Aero Happy",
+  "REQUIRED_FIELD": "Este campo es requerido",
+  "LOGIN": {
+    "FOR_SALES": "Para ventas",
+    "SIGN_IN": "Iniciar sesión",
+    "SIGN_IN_SOCIAL": "Iniciar sesión con",
+    "TRAVEL": "Mis viajes",
+    "EMAIL": "Correo",
+    "PASSWORD": "Contraseña",
+    "ALLOW": "Recuérdame",
+    "FORGOT_PASSWORD": "Olvidé mi contraseña",
+    "REGISTER": "Regístrate",
+    "NEW_ACCOUNT": "No tienes ninguna cuenta"
+  },
+  "FOOTER": {
+    "TERMS_OF_USE": "Términos de uso",
+    "PRIVACY_STATEMENT": "Declaración de privacidad"
+  },
+  "LANGUAGE": {
+    "SPANISH": "Español",
+    "ENGLISH": "Ingles",
+    "PORTUGUESE": "Portugués"
+  }
+}

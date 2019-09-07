@@ -1,0 +1,27 @@
+{
+  "TITLE_HELMET": "Connect and travel around the world with Aero Happy",
+  "SUB_TITLE_HELMET": "Aero Happy is the leading travel agency in Colombia and Latin America. Tickets, accommodations, packages, activities, car rental and much more.",
+  "AERO_HAPPY": "Aero Happy",
+  "REQUIRED_FIELD": "Required field",
+  "LOGIN": {
+    "FOR_SALES": "For sales",
+    "SIGN_IN": "Sign in",
+    "SIGN_IN_SOCIAL": "Sign in",
+    "TRAVEL": "My trips",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "ALLOW": "Remember me",
+    "FORGOT_PASSWORD": "Forgot password",
+    "REGISTER": "Register",
+    "NEW_ACCOUNT": "You have no account"
+  },
+  "FOOTER": {
+    "TERMS_OF_USE": "Terms of use",
+    "PRIVACY_STATEMENT": "Privacy statement"
+  },
+  "LANGUAGE": {
+    "SPANISH": "Spanish",
+    "ENGLISH": "English",
+    "PORTUGUESE": "Portuguese"
+  }
+}

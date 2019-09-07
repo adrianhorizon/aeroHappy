@@ -1,0 +1,118 @@
+.container-form {
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 6px 8px 20px 0px $blue-aero-happy-bg;
+
+  @media (max-width: $large-size) {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: $small-size) {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .left {
+    color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("");
+    overflow: hidden;
+
+    .overlay {
+      padding: 30px;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(135deg, $blue-aero-happy-bg 10%, $purple-areo-happy 100%);
+      overflow: hidden;
+      box-sizing: border-box;
+
+      h1 {
+        font-size: 10vmax;
+        line-height: 1;
+        font-weight: 900;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .right {
+    padding: 40px;
+    overflow: hidden;
+
+    @media (max-width: $large-size) {
+      width: 100%;
+    }
+
+    h5 {
+      font-size: 6vmax;
+      line-height: 0;
+    }
+
+    p {
+      font-size: 14px;
+      color: $grey-font-aero-happy;
+    }
+
+    .inputs {
+      overflow: hidden;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 25px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid $grey-font-aero-happy;
+    }
+
+    .remember-forget-password {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        margin: 0;
+        margin-right: 7px;
+        width: auto;
+      }
+    }
+
+    .container-button {
+      float: right;
+      margin-top: 50px;
+    }
+
+    .container-button-social {
+      float: right;
+      margin-top: 50px;
+    }
+
+    .button-social {
+      width: 45%;
+      border-radius: 50px;
+    }
+
+    .container-login {
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 35px;
+      border-radius: 50px;
+      border: 0;
+      outline: 0;
+      background-image: linear-gradient(135deg, $purple-aero-happy 10%, $dark-purple 100%);
+    }
+  }
+}
