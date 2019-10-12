@@ -9,10 +9,12 @@
     "SIGN_IN_SOCIAL": "Sign in",
     "TRAVEL": "My trips",
     "EMAIL": "Email",
+    "FIRST_NAME": "Tell us your name",
+    "PHONE": "Phone",
     "PASSWORD": "Password",
-    "ALLOW": "Remember me",
     "FORGOT_PASSWORD": "Forgot password",
     "REGISTER": "Register",
+    "REGISTERED": "Registered",
     "NEW_ACCOUNT": "You have no account"
   },
   "FOOTER": {

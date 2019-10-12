@@ -1,53 +1,50 @@
 .container-form {
   margin: 20px auto;
   width: 80%;
-  border-radius: 10px;
   display: flex;
   flex: 1 1 100%;
   align-items: stretch;
   justify-content: space-between;
-  box-shadow: 6px 8px 20px 0px $blue-aero-happy-bg;
 
   @media (max-width: $large-size) {
     flex-flow: wrap;
     text-align: center;
     align-content: center;
     align-items: center;
+
+    .left {
+      display: none;
+      margin-top: none;
+    }
   }
 
   @media (max-width: $small-size) {
     margin: 0 auto;
     width: 100%;
+
+    .left {
+      display: none;
+    }
   }
 
   .left {
     color: #FFFFFF;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("");
     overflow: hidden;
-
-    .overlay {
-      padding: 30px;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(135deg, $blue-aero-happy-bg 10%, $purple-areo-happy 100%);
-      overflow: hidden;
-      box-sizing: border-box;
-
-      h1 {
-        font-size: 10vmax;
-        line-height: 1;
-        font-weight: 900;
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
-    }
+    width: 100%;
+    margin-top: 100px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o/footer.png?alt=media&token=7ed77f8a-03e3-403e-83de-8a8ab3e55377');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: linear-gradient(135deg, $blue-aero-happy-bg 10%, $purple-areo-happy 100%);
+    box-sizing: border-box;
   }
 
   .right {
     padding: 40px;
     overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -1px 3px 7px -2px rgba(0, 0, 0, 0.75);
 
     @media (max-width: $large-size) {
       width: 100%;
@@ -68,51 +65,100 @@
     }
 
     input {
+      border: 2px solid $blue-aero-happy;
+      color: $blue-aero-happy;
+      border-radius: 10px;
       width: 100%;
       padding: 10px;
       margin-top: 25px;
       font-size: 16px;
-      border: none;
       outline: none;
-      border-bottom: 2px solid $grey-font-aero-happy;
-    }
+      transition: 1s;
 
-    .remember-forget-password {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      &:hover {
+        border: 2px solid $blue-aero-happy-bg;
+        color: $blue-aero-happy-bg;
+      }
 
-      input {
-        margin: 0;
-        margin-right: 7px;
-        width: auto;
+      &::placeholder {
+        opacity: 0.5;
+        color: $grey-font-aero-happy;
       }
     }
 
+    .container-forgot {
+      margin-top: 25px;
+      text-align: right;
+    }
+
     .container-button {
-      float: right;
-      margin-top: 50px;
+      text-align: right;
+      margin-top: 30px;
+    }
+
+    .container-social-title {
+      text-align: center;
     }
 
     .container-button-social {
-      float: right;
-      margin-top: 50px;
+      margin-top: 25px;
+    }
+
+    i {
+      text-align: center;
     }
 
     .button-social {
-      width: 45%;
-      border-radius: 50px;
+      width: 100%;
+      margin: 5px;
+      cursor: pointer;
+      outline: none;
+      border-radius: 15px;
+      padding: 10px;
+      font-weight: bold;
+      transition: 1s;
+    }
+
+    i {
+      padding: 0px 5px;
+    }
+
+    .twitter {
+      background: $colorTwitter;
+      color: #fff;
+
+      &:hover {
+        border: none;
+        color: $colorTwitter;
+        background: transparent;
+      }
+    }
+
+    .instagram {
+      background: $colorPlayStore;
+      color: #fff;
+
+      &:hover {
+        border: none;
+        color: $colorPlayStore;
+        background: transparent;
+      }
     }
 
     .container-login {
+      cursor: pointer;
       color: #fff;
       font-size: 16px;
       padding: 12px 35px;
       border-radius: 50px;
       border: 0;
       outline: 0;
-      background-image: linear-gradient(135deg, $purple-aero-happy 10%, $dark-purple 100%);
+      background-color: $blue-aero-happy;
+      transition: 1s;
+
+      &:hover {
+        background-color: $blue-aero-happy-bg;
+      }
     }
   }
 }
