@@ -10,4 +10,6 @@ require('asset-require-hook')({
   name: '/assets/[hash].[ext]',
 });
 
+require('@babel/polyfill');
+
 require('./server.js');

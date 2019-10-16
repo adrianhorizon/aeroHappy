@@ -17,6 +17,25 @@
     "REGISTERED": "Registered",
     "NEW_ACCOUNT": "You have no account"
   },
+  "SEARCH": {
+    "TRAVEL_TILE": "Cheap flights",
+    "ROUND_TRIP": "Round trip",
+    "ONE_WAY":"One way",
+    "MULTI_DESTINATION": "Multidestination"
+  },
+  "FORM": {
+    "ORIGIN": "Origin",
+    "DESTINATION": "Destination",
+    "DATES": "Dates",
+    "PEOPLE_CLASS": "People and class",
+    "SEARCH": "Search",
+    "PLACEHOLDER": {
+      "ORIGIN": "Where you travel",
+      "GOING": "Going",
+      "RETURN": "Return",
+      "PEOPLE": "1 People"
+    }
+  },
   "FOOTER": {
     "TERMS_OF_USE": "Terms of use",
     "PRIVACY_STATEMENT": "Privacy statement"

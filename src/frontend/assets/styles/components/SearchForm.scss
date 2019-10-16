@@ -1,0 +1,44 @@
+.container-search-form {
+  display: grid;
+  grid-auto-rows: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 1em;
+
+  .container-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $search-aero-happy;
+    background-color: white;
+    color: $blue-aero-happy-bg;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+
+    &:focus {
+      outline: none;
+      color: #F27405;
+    }
+  }
+
+  .button-search {
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 10px;
+    background-color: #F27405;
+  }
+
+  input {
+    margin-top: 8px;
+
+    &::placeholder {
+      color: $grey-font-aero-happy;
+      opacity: 0.7;
+    }
+  }
+
+  input[type="text"]:disabled {
+    background-color: #bababa;
+  }
+}

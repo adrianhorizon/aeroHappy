@@ -17,6 +17,25 @@
     "REGISTERED": "Regístrarme",
     "NEW_ACCOUNT": "No tienes ninguna cuenta"
   },
+  "SEARCH": {
+    "TRAVEL_TILE": "Vuelos baratos",
+    "ROUND_TRIP": "Ida y vuelta",
+    "ONE_WAY":"Sólo ida",
+    "MULTI_DESTINATION":"Multidestino"
+  },
+  "FORM": {
+    "ORIGIN": "Origen",
+    "DESTINATION": "Destino",
+    "DATES": "Fechas",
+    "PEOPLE_CLASS": "Personas y clase",
+    "SEARCH": "Buscar",
+    "PLACEHOLDER": {
+      "ORIGIN": "A donde viajas",
+      "GOING": "Ida",
+      "RETURN": "Vuelta",
+      "PEOPLE": "1 Persona"
+    }
+  },
   "FOOTER": {
     "TERMS_OF_USE": "Términos de uso",
     "PRIVACY_STATEMENT": "Declaración de privacidad"
