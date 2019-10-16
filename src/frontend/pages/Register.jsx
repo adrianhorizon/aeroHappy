@@ -6,7 +6,7 @@ import { loginRequest } from '../redux/actions/loginAction';
 import Country from '../components/Country';
 import '../assets/styles/components/Login.scss';
 
-class Login extends Component {
+class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,21 +23,25 @@ class Login extends Component {
         <div className="right">
           <h2>
             <Country />
-            {t('LOGIN.SIGN_IN')}
+            {t('LOGIN.REGISTER')}
           </h2>
-          <p>
-            {t('LOGIN.NEW_ACCOUNT')}
-            <Link to="/register">
-              {t('LOGIN.REGISTER')}
-            </Link>
-          </p>
           <form>
 
             <div className="inputs">
               <input
+                name="firstName"
+                type="text"
+                placeholder={t('LOGIN.FIRST_NAME')}
+              />
+              <input
                 name="email"
                 type="text"
                 placeholder={t('LOGIN.EMAIL')}
+              />
+              <input
+                name="phone"
+                type="phone"
+                placeholder={t('LOGIN.PHONE')}
               />
               <input
                 name="password"
@@ -46,26 +50,15 @@ class Login extends Component {
               />
             </div>
 
-            <div className="container-forgot">
-              <Link to="/">{t('LOGIN.FORGOT_PASSWORD')}</Link>
-            </div>
-
             <div className="container-button">
-              <button className="container-login" type="button">{t('LOGIN.SIGN_IN')}</button>
+              <button className="container-login" type="button">{t('LOGIN.REGISTERED')}</button>
             </div>
 
-            <div className="container-button-social">
-              <p className="container-social-title">or</p>
-              <hr />
-              <button type="button" className="button-social instagram">
-                <i className="fab fa-google fa-lg" aria-hidden="true" />
-                {t('LOGIN.SIGN_IN_SOCIAL')} Google
-              </button>
-              <button type="button" className="button-social twitter">
-                <i className="fab fa-twitter-square fa-lg" aria-hidden="true" />
-                {t('LOGIN.SIGN_IN_SOCIAL')} Twitter
-              </button>
-            </div>
+            <p className="container-social-title">
+              <Link to="/login">
+                {t('LOGIN.SIGN_IN')}
+              </Link>
+            </p>
           </form>
         </div>
       </section>
@@ -80,4 +73,4 @@ const mapDispatchToProps = {
 export default connect(
   null,
   mapDispatchToProps,
-)(withNamespaces()(Login));
+)(withNamespaces()(Register));

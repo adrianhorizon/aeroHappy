@@ -9,10 +9,12 @@
     "SIGN_IN_SOCIAL": "Iniciar sesión con",
     "TRAVEL": "Mis viajes",
     "EMAIL": "Correo",
+    "FIRST_NAME": "Dinos tu nombre",
+    "PHONE": "Celular",
     "PASSWORD": "Contraseña",
-    "ALLOW": "Recuérdame",
     "FORGOT_PASSWORD": "Olvidé mi contraseña",
     "REGISTER": "Regístrate",
+    "REGISTERED": "Regístrarme",
     "NEW_ACCOUNT": "No tienes ninguna cuenta"
   },
   "FOOTER": {

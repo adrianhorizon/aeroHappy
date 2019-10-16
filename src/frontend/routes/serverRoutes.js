@@ -1,5 +1,6 @@
 import Home from '../pages/Home';
 import Login from '../pages/Login';
+import Register from '../pages/Register';
 
 const serverRoutes = [
   {
@@ -10,6 +11,11 @@ const serverRoutes = [
   {
     path: '/login',
     component: Login,
+    exact: true,
+  },
+  {
+    path: '/register',
+    component: Register,
     exact: true,
   },
   {

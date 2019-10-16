@@ -9,10 +9,12 @@
     "SIGN_IN_SOCIAL": "Entrar com",
     "TRAVEL": "Minhas viagens",
     "EMAIL": "Mail",
+    "FIRST_NAME": "Diga-nos o seu nome",
+    "PHONE": "Telefone celular",
     "PASSWORD": "Senha",
-    "ALLOW": "Lembra de mim",
     "FORGOT_PASSWORD": "Esqueci minha senha",
     "REGISTER": "Inscreva-se",
+    "REGISTERED": "Inscreva-se",
     "NEW_ACCOUNT": "Você não tem conta"
   },
   "FOOTER": {
