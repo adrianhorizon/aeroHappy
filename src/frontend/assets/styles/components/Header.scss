@@ -1,21 +1,21 @@
-@import '../Vars.scss';
-
 .header {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, .1);
   width: 100%;
   z-index: 3;
   padding: 20px 30px;
 }
 
 .inactive {
-  color: $purple-areo-happy;
-  text-decoration: none;
-}
+  color: $grey-font-aero-happy;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 1s;
 
-.active {
-  color: $blue-aero-happy-bg;
-  text-decoration: none;
+  &:hover {
+    color: $blue-aero-happy-bg;
+    background-color: #f7f7f7;
+  }
 }
 
 .header ul {
@@ -23,23 +23,17 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
 }
 
 .header li a {
   display: block;
   padding: 15px 20px;
-  border-right: 1px solid $purple-areo-happy;
   text-decoration: none;
   border-radius: 10px;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f7f7f7;
-}
-
 .header .logo {
+  color: $grey-font-aero-happy;
   font-size: 2em;
   text-decoration: none;
 }
@@ -111,7 +105,7 @@
   top: 0;
 }
 
-@media (min-width: $medium-size) {
+@media (min-width: $large-size) {
   .header li {
     float: left;
   }
@@ -127,7 +121,7 @@
   }
 }
 
-@media (max-width: $medium-size) {
+@media (max-width: $large-size) {
   .header .menu-icon {
     float: right;
   }

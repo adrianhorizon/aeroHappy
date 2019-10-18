@@ -13,6 +13,19 @@
     animation-duration: 12s;
   }
 
+  @media screen and (min-width: 1600px) {
+    .search-country {
+      width: 50% !important;
+    }
+  }
+
+  @media only screen and (max-width: $small-size) {
+    .container-radio-button input[type="radio"]:checked+label,
+    .container-radio-button label {
+      width: 100%;
+    }
+  }
+
   .container-radio-button>div {
     margin-top: 26px;
     margin-bottom: 26px;
@@ -21,7 +34,7 @@
   .container-radio-button label {
     display: inline-block;
     cursor: pointer;
-    color: $colorSearch;
+    color: $color-search;
     position: relative;
     padding: 5px 15px 5px 50px;
     font-size: 1em;
@@ -42,7 +55,7 @@
     left: 15px;
     border-radius: 50%;
     background: none;
-    border: 3px solid $colorSearch;
+    border: 3px solid $color-search;
   }
 
   .container-radio-button input[type="radio"],
@@ -54,7 +67,7 @@
 
   .container-radio-button input[type="radio"]:checked+label {
     padding: 5px 15px;
-    background: $colorSearch;
+    background: $color-search;
     border-radius: 2px;
     color: $blue-aero-happy-bg;
   }
@@ -64,7 +77,7 @@
   }
 
   .container-radio-button .checkbox input[type="checkbox"]:checked+label {
-    background: $colorSearch;
+    background: $color-search;
     color: #fff;
     padding: 5px 15px;
   }

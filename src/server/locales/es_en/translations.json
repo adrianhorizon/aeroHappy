@@ -37,6 +37,18 @@
     }
   },
   "FOOTER": {
+    "PLAY_STORE": "Play Store",
+    "APP_STORE": "App Store",
+    "FOLLOW": "Follow us",
+    "DOWNLOAD": "Download App",
+    "ABOUT": "About ud",
+    "CATEGORY": "Category",
+    "COMMUNITY": "Community",
+    "BLOG": "Blog",
+    "DOUBTS": "Doubts",
+    "LATAM": "From LATAM with",
+    "WORLD": "for the world",
+    "YEAR": "2019",
     "TERMS_OF_USE": "Terms of use",
     "PRIVACY_STATEMENT": "Privacy statement"
   },

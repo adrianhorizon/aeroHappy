@@ -5,8 +5,8 @@ import '../assets/styles/components/SearchForm.scss';
 const SearchForm = (props) => {
   return (
     <div>
-      <form className="container-search-form" onSubmit={props.onSubmit}>
-        <div>
+      <form className="container-form-search" onSubmit={props.onSubmit}>
+        <div className="c1">
           <label>{props.t('FORM.ORIGIN')}</label>
           <input
             placeholder={props.t('FORM.PLACEHOLDER.ORIGIN')}
@@ -18,7 +18,7 @@ const SearchForm = (props) => {
           />
         </div>
 
-        <div>
+        <div className="c2">
           <label>{props.t('FORM.DESTINATION')}</label>
           <input
             placeholder={props.t('FORM.PLACEHOLDER.ORIGIN')}
@@ -30,7 +30,7 @@ const SearchForm = (props) => {
           />
         </div>
 
-        <div>
+        <div className="c3">
           <label>{props.t('FORM.DATES')}</label>
           <input
             placeholder={props.t('FORM.PLACEHOLDER.GOING')}
@@ -42,7 +42,7 @@ const SearchForm = (props) => {
           />
         </div>
 
-        <div>
+        <div className="c4">
           <br />
           <input
             placeholder={props.t('FORM.PLACEHOLDER.RETURN')}
@@ -55,19 +55,19 @@ const SearchForm = (props) => {
           />
         </div>
 
-        <div>
+        <div className="c5">
           <label>{props.t('FORM.PEOPLE_CLASS')}</label>
           <input
             placeholder={props.t('FORM.PLACEHOLDER.PEOPLE')}
             onChange={props.onChange}
-            className="container-input"
+            className="container-input input-dates"
             type="text"
             name="people"
             value={props.formValues.people}
           />
         </div>
 
-        <div>
+        <div className="c6">
           <button type="submit" className="button-search">{props.t('FORM.SEARCH')}</button>
         </div>
       </form>

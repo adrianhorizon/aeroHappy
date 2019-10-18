@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
-import Home from '../pages/Home';
-import Login from '../pages/Login';
-import Register from '../pages/Register';
+import Home from '../containers/Home';
+import Login from '../containers/Login';
+import Register from '../containers/Register';
 import AppRoute from './AppRoute';
 
 const Routes = () => (

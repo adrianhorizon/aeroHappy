@@ -1,20 +1,182 @@
-@import '../Vars.scss';
+.footer-view {
+  .button-store {
+    cursor: pointer;
+    padding: 10px;
+    background-color: $color-play-store;
+    border: 1px solid $color-play-store;
+    border-radius: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    width: 150px;
+    max-width: 100%;
+    color: white;
+    font-weight: bold;
+  }
 
-.footer {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  width: 100%;
-}
+  .separate-button {
+    margin-bottom: 16px;
+  }
 
-.footer a {
-  color: $blue-aero-happy;
-  cursor: pointer;
-  font-size: 14px;
-  padding-left: 30px;
-  text-decoration: none;
-}
+  .footer-distributed {
+    background: white;
+    color: $font-ligth-grey;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 20px 80px;
+    margin-top: 50px;
 
-.footer a:hover {
-  text-decoration: underline;
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      padding: 10px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .footer-left {
+      width: 35%;
+    }
+
+    .footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer-center {
+      width: 40%;
+    }
+
+    .footer-center i.fa-envelope {
+      font-size: 18px;
+      line-height: 52px;
+    }
+
+    .footer-right {
+      width: 25%;
+    }
+
+    .footer-icons {
+      margin-top: 25px;
+    }
+
+    .footer-icons a {
+      display: inline-block;
+      width: 52px;
+      height: 52px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 52px;
+      transition: .6s;
+    }
+  }
+
+  .footer-country {
+    margin-top: 25px;
+  }
+
+  .facebook {
+    @include color-social($color-facebook);
+  }
+
+  .twitter {
+    @include color-social($color-twitter);
+  }
+
+  .linkedin {
+    @include color-social($color-linkedin);
+  }
+
+  .instagram {
+    @include color-social($color-instagram);
+  }
+
+  .aero-center {
+    font-size: 16px;
+    color: #888888;
+    text-align: center;
+  }
+
+  .heart {
+    color: $search-aero-happy;
+  }
+
+  .copy-rigth {
+    color: $dark-purple;
+  }
+
+  .space-icon {
+    margin-right: 10px;
+  }
+
+  @media (max-width: $medium-size) {
+
+    .footer-distributed {
+      font: bold 14px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center {
+      display: none;
+    }
+
+    .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+      margin-left: 0;
+    }
+  }
+
+  .m-linkitem {
+    a {
+      transition: all .4s linear;
+      color: $grey-font-aero-happy;
+      font-size: 15px;
+      font-weight: normal;
+      text-decoration: none;
+      padding-bottom: 8px;
+      background: linear-gradient(to right, $purple-areo-happy 0%, $blue-aero-happy-bg 98%);
+      background-size: 0px 2px;
+      background-repeat: no-repeat;
+      background-position: left 85%;
+      text-shadow: 0;
+
+      &:hover {
+        background-size: 100% 2px;
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 8px 0px;
+  }
+
+  select {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background: $blue-ligth4;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

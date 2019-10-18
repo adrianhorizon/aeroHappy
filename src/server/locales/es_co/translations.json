@@ -37,6 +37,18 @@
     }
   },
   "FOOTER": {
+    "PLAY_STORE": "Play Store",
+    "APP_STORE": "App Store",
+    "FOLLOW": "Síguenos",
+    "DOWNLOAD": "Descarga la App",
+    "ABOUT": "Acerca de nosotros",
+    "CATEGORY": "Categorías",
+    "COMMUNITY": "Comunidad",
+    "BLOG": "Blog",
+    "DOUBTS": "Dudas",
+    "LATAM": "De LATAM con",
+    "WORLD": "para el mundo",
+    "YEAR": "2019",
     "TERMS_OF_USE": "Términos de uso",
     "PRIVACY_STATEMENT": "Declaración de privacidad"
   },
