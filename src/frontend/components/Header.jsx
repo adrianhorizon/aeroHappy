@@ -12,7 +12,7 @@ class Header extends Component {
 
     return (
       <header className="header">
-        <Link to="/" className="logo inactive">
+        <Link to="/" className="logo">
           <Country />
           {t('AERO_HAPPY')}
         </Link>

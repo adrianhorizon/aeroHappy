@@ -17,7 +17,38 @@
     "REGISTERED": "Inscreva-se",
     "NEW_ACCOUNT": "Você não tem conta"
   },
+  "SEARCH": {
+    "TRAVEL_TILE": "Voos baratos",
+    "ROUND_TRIP": "Ida e volta",
+    "ONE_WAY":"Somente ida",
+    "MULTI_DESTINATION": "Multidestino"
+  },
+  "FORM": {
+    "ORIGIN": "Origem",
+    "DESTINATION": "Destino",
+    "DATES": "Datas",
+    "PEOPLE_CLASS": "Pessoas e classe",
+    "SEARCH": "Procurar",
+    "PLACEHOLDER": {
+      "ORIGIN": "Para onde você está viajando",
+      "GOING": "Para fora",
+      "RETURN": "De volta",
+      "PEOPLE": "1 Pessoa"
+    }
+  },
   "FOOTER": {
+    "PLAY_STORE": "Play Store",
+    "APP_STORE": "App Store",
+    "FOLLOW": "Siga-nos",
+    "DOWNLOAD": "Baixe o aplicativo",
+    "ABOUT": "Sobre nós",
+    "CATEGORY": "Categorías",
+    "COMMUNITY": "Comunidad",
+    "BLOG": "Blog",
+    "DOUBTS": "Dúvidas",
+    "LATAM": "Da LATAM com",
+    "WORLD": "para o mundo",
+    "YEAR": "2019",
     "TERMS_OF_USE": "Termos de uso",
     "PRIVACY_STATEMENT": "Declaração de privacidade"
   },

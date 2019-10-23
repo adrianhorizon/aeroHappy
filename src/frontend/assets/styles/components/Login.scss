@@ -124,23 +124,23 @@
     }
 
     .twitter {
-      background: $colorTwitter;
+      background: $color-twitter;
       color: #fff;
 
       &:hover {
         border: none;
-        color: $colorTwitter;
+        color: $color-twitter;
         background: transparent;
       }
     }
 
     .instagram {
-      background: $colorPlayStore;
+      background: $color-play-store;
       color: #fff;
 
       &:hover {
         border: none;
-        color: $colorPlayStore;
+        color: $color-play-store;
         background: transparent;
       }
     }

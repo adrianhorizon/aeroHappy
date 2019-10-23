@@ -25,6 +25,8 @@ class Country extends Component {
   render() {
     const { country } = this.props;
 
+    console.log(this.props);
+
     return (
       <img
         className="image-country"
