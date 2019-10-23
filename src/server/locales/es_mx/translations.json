@@ -9,13 +9,46 @@
     "SIGN_IN_SOCIAL": "Iniciar sesión con",
     "TRAVEL": "Mis viajes",
     "EMAIL": "Correo",
+    "FIRST_NAME": "Dinos tu nombre",
+    "PHONE": "Celular",
     "PASSWORD": "Contraseña",
-    "ALLOW": "Recuérdame",
     "FORGOT_PASSWORD": "Olvidé mi contraseña",
     "REGISTER": "Regístrate",
+    "REGISTERED": "Regístrarme",
     "NEW_ACCOUNT": "No tienes ninguna cuenta"
   },
+  "SEARCH": {
+    "TRAVEL_TILE": "Vuelos baratos",
+    "ROUND_TRIP": "Ida y vuelta",
+    "ONE_WAY":"Sólo ida",
+    "MULTI_DESTINATION": "Multidestino"
+  },
+  "FORM": {
+    "ORIGIN": "Origen",
+    "DESTINATION": "Destino",
+    "DATES": "Fechas",
+    "PEOPLE_CLASS": "Personas y clase",
+    "SEARCH": "Buscar",
+    "PLACEHOLDER": {
+      "ORIGIN": "A donde viajas",
+      "GOING": "Ida",
+      "RETURN": "Vuelta",
+      "PEOPLE": "1 Persona"
+    }
+  },
   "FOOTER": {
+    "PLAY_STORE": "Play Store",
+    "APP_STORE": "App Store",
+    "FOLLOW": "Síguenos",
+    "DOWNLOAD": "Descarga la App",
+    "ABOUT": "Acerca de nosotros",
+    "CATEGORY": "Categorías",
+    "COMMUNITY": "Comunidad",
+    "BLOG": "Blog",
+    "DOUBTS": "Dudas",
+    "LATAM": "De LATAM con",
+    "WORLD": "para el mundo",
+    "YEAR": "2019",
     "TERMS_OF_USE": "Términos de uso",
     "PRIVACY_STATEMENT": "Declaración de privacidad"
   },

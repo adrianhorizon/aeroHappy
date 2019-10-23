@@ -1,0 +1,9 @@
+@mixin color-social($color) {
+  color: $color;
+
+  &:hover {
+    background: $color;
+    color: #fff !important
+  }
+}
+

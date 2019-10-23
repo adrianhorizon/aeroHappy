@@ -33,8 +33,8 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               data: `
-              @import "${path.resolve(__dirname, 'src/frontend/assets/styles/Vars.scss')}";
-              @import "${path.resolve(__dirname, 'src/frontend/assets/styles/Media.scss')}";
+              @import "${path.resolve(__dirname, 'src/frontend/assets/styles/Variables.scss')}";
+              @import "${path.resolve(__dirname, 'src/frontend/assets/styles/Mixins.scss')}";
               @import "${path.resolve(__dirname, 'src/frontend/assets/styles/Base.scss')}";
               `,
             },

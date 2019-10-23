@@ -9,13 +9,46 @@
     "SIGN_IN_SOCIAL": "Sign in",
     "TRAVEL": "My trips",
     "EMAIL": "Email",
+    "FIRST_NAME": "Tell us your name",
+    "PHONE": "Phone",
     "PASSWORD": "Password",
-    "ALLOW": "Remember me",
     "FORGOT_PASSWORD": "Forgot password",
     "REGISTER": "Register",
+    "REGISTERED": "Registered",
     "NEW_ACCOUNT": "You have no account"
   },
+  "SEARCH": {
+    "TRAVEL_TILE": "Cheap flights",
+    "ROUND_TRIP": "Round trip",
+    "ONE_WAY":"One way",
+    "MULTI_DESTINATION": "Multidestination"
+  },
+  "FORM": {
+    "ORIGIN": "Origin",
+    "DESTINATION": "Destination",
+    "DATES": "Dates",
+    "PEOPLE_CLASS": "People and class",
+    "SEARCH": "Search",
+    "PLACEHOLDER": {
+      "ORIGIN": "Where you travel",
+      "GOING": "Going",
+      "RETURN": "Return",
+      "PEOPLE": "1 People"
+    }
+  },
   "FOOTER": {
+    "PLAY_STORE": "Play Store",
+    "APP_STORE": "App Store",
+    "FOLLOW": "Follow us",
+    "DOWNLOAD": "Download App",
+    "ABOUT": "About ud",
+    "CATEGORY": "Category",
+    "COMMUNITY": "Community",
+    "BLOG": "Blog",
+    "DOUBTS": "Doubts",
+    "LATAM": "From LATAM with",
+    "WORLD": "for the world",
+    "YEAR": "2019",
     "TERMS_OF_USE": "Terms of use",
     "PRIVACY_STATEMENT": "Privacy statement"
   },

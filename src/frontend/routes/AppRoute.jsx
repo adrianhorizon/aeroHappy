@@ -21,11 +21,11 @@ class AppRoute extends Component {
 
           return (
             <div>
-              {props.location.pathname !== '/login' &&
+              {!['/register', '/login'].includes(props.location.pathname) &&
                 <Header />
               }
               <Component {...props} />
-              {props.location.pathname !== '/login' &&
+              {!['/register', '/login'].includes(props.location.pathname) &&
                 <Footer />
               }
             </div>

@@ -1,5 +1,6 @@
-import Home from '../pages/Home';
-import Login from '../pages/Login';
+import Home from '../containers/Home';
+import Login from '../containers/Login';
+import Register from '../containers/Register';
 
 const serverRoutes = [
   {
@@ -10,6 +11,11 @@ const serverRoutes = [
   {
     path: '/login',
     component: Login,
+    exact: true,
+  },
+  {
+    path: '/register',
+    component: Register,
     exact: true,
   },
   {
