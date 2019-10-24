@@ -43,7 +43,7 @@ const render = (html, preloadedState, req) => {
       </head>
       <body class="page">
         <div id="app">${html}</div>
-        <script>
+        <script type="text/javascript">
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
           window.initialI18nStore = JSON.parse('${JSON.stringify(initialI18nStore)}');
           window.initialLanguage = '${initialLanguage}';

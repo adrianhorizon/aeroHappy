@@ -1,5 +1,4 @@
 import express from 'express';
-import path from 'path';
 import dotenv from 'dotenv';
 import webpack from 'webpack';
 import helmet from 'helmet';
@@ -24,14 +23,14 @@ i18n
     fallbackLng: 'es_mx',
     preload: ['es_co', 'es_mx', 'es_en', 'pt_br'],
     backend: {
-      loadPath: path.join(__dirname, 'locales/{{lng}}/{{ns}}.json'),
-      addPath: path.join(__dirname, 'locales/{{lng}}/{{ns}}.missing.json')
+      loadPath: `${__dirname}/locales/{{lng}}/{{ns}}.json`,
+      addPath: `${__dirname}/locales/{{lng}}/{{ns}}.missing.json`,
     },
   });
 
 app.use(express.static(`${__dirname}/public`));
+app.use('/locales', express.static(`${__dirname}/locales/`));
 app.use(i18nextMiddleware.handle(i18n));
-app.use('/locales', express.static(path.join(__dirname, 'locales/')))
 
 if (ENV === 'development') {
   const webpackConfig = require('../../webpack.config');

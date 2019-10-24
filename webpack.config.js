@@ -24,7 +24,7 @@ const config = {
     publicPath: '/',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx'],
   },
   optimization: {
     minimizer: isProd ? [
