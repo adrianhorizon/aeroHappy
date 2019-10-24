@@ -1,4 +1,5 @@
 require('ignore-styles');
+require('@babel/polyfill');
 
 require('@babel/register')({
   ignore: [/(node_modules)/],
@@ -9,7 +10,5 @@ require('asset-require-hook')({
   extensions: ['jpg', 'png', 'gif'],
   name: '/assets/[hash].[ext]',
 });
-
-require('@babel/polyfill');
 
 require('./server.js');

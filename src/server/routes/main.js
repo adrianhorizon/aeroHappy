@@ -5,6 +5,7 @@ import { StaticRouter } from 'react-router';
 import { renderRoutes } from 'react-router-config';
 import { I18nextProvider } from 'react-i18next';
 import Routes from '../../frontend/routes/serverRoutes';
+import Layout from '../../frontend/components/Layout';
 import store from '../../frontend/redux/store';
 import render from '../render';
 
@@ -17,7 +18,9 @@ const main = (req, res, next) => {
             location={req.url}
             context={{}}
           >
-            {renderRoutes(Routes)}
+            <Layout>
+              {renderRoutes(Routes)}
+            </Layout>
           </StaticRouter>
         </Provider>
       </I18nextProvider>,

@@ -19,7 +19,6 @@ const serverRoutes = [
     exact: true,
   },
   {
-    path: '**',
     component: Home,
   },
 ];
