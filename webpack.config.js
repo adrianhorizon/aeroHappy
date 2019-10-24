@@ -15,12 +15,7 @@ const isProd = (process.env.NODE_ENV === 'production');
 
 const config = {
   devtool: isProd ? 'hidden-source-map' : 'cheap-source-map',
-  entry: {
-    main: [
-      '@babel/polyfill',
-      './src/frontend/index.js',
-    ],
-  },
+  entry: './src/frontend/index.js',
   mode: process.env.NODE_ENV,
   output: {
     path: isProd ?

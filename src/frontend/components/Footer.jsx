@@ -8,13 +8,15 @@ class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      // eslint-disable-next-line react/no-unused-state
       flagLang: '',
     };
   }
 
   changeLang = (lang) => {
     this.setState({
-      flagLang: lang
+      // eslint-disable-next-line react/no-unused-state
+      flagLang: lang,
     });
 
     return i18n.changeLanguage(lang);
