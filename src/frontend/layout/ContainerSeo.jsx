@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 
-const Layout = ({ link, title, subTitle }) => {
+const ContainerSeo = ({ link, title, subTitle }) => {
   return (
     <Fragment>
       <Helmet>
@@ -14,4 +14,4 @@ const Layout = ({ link, title, subTitle }) => {
   );
 };
 
-export default Layout;
+export default ContainerSeo;

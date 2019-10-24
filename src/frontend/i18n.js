@@ -3,12 +3,13 @@ const XHR = require('i18next-xhr-backend');
 const LanguageDetector = require('i18next-browser-languagedetector');
 
 const options = {
+  lng: 'es_mx',
   fallbackLng: 'es_mx',
   load: 'languageOnly',
   ns: ['translations'],
   defaultNS: 'translations',
   saveMissing: true,
-  debug: true,
+  debug: false,
   interpolation: {
     escapeValue: false,
     formatSeparator: ',',
@@ -19,6 +20,7 @@ const options = {
   },
   wait: process && !process.release,
 };
+
 if (process && !process.release) {
   i18n
     .use(XHR)

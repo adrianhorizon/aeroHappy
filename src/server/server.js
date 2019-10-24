@@ -20,8 +20,9 @@ i18n
   .use(Backend)
   .use(i18nextMiddleware.LanguageDetector)
   .init({
-    preload: ['es_co', 'es_mx', 'es_en', 'pt_br'],
+    lng: 'es_mx',
     fallbackLng: 'es_mx',
+    preload: ['es_co', 'es_mx', 'es_en', 'pt_br'],
     backend: {
       loadPath: path.join(__dirname, 'locales/{{lng}}/{{ns}}.json'),
       addPath: path.join(__dirname, 'locales/{{lng}}/{{ns}}.missing.json')

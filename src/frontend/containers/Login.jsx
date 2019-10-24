@@ -16,7 +16,6 @@ class Login extends Component {
 
   render() {
     const { t } = this.props;
-
     return (
       <section className="container-form">
         <div className="left" />

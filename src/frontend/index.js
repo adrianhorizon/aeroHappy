@@ -7,6 +7,7 @@ import { createBrowserHistory } from 'history';
 import store from './redux/store';
 import Routes from './routes/App';
 import i18n from './i18n';
+import '@babel/polyfill';
 
 if (typeof window !== 'undefined') {
   const history = createBrowserHistory();
