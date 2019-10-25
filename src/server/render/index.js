@@ -4,8 +4,7 @@ import getManifest from '../getManifest';
 
 dotenv.config();
 
-const { NODE_ENV } = process.env;
-const isProd = NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === 'production';
 
 const srcs = {
   mainCss: 'assets/app.css',

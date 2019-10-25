@@ -4,6 +4,8 @@
   "AERO_HAPPY": "Aero Happy",
   "REQUIRED_FIELD": "Required field",
   "LOGIN": {
+    "TITLE_HELMET_LOGIN": "Sign in aerohappy",
+    "TITLE_HELMET_REGISTER": "Register aerohappy",
     "FOR_SALES": "For sales",
     "SIGN_IN": "Sign in",
     "SIGN_IN_SOCIAL": "Sign in",

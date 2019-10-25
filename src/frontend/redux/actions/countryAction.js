@@ -1,26 +1,9 @@
-/* eslint-disable consistent-return */
 import axios from 'axios';
+import store from '../store';
+import i18n from '../../utils/i18n';
 import { GET_COUNTRY, SET_COUNTRY } from '../../utils/types';
 
-import store from '../store';
-import i18n from '../../i18n';
-
 const urlCity = 'https://ipapi.co/json/';
-
-export const getCountry = () => (dispatch) => {
-  const { countryReducer } = store.getState();
-
-  if (countryReducer.country.length === 0) {
-    dispatch({
-      type: GET_COUNTRY,
-    });
-
-    const request = axios.get(urlCity);
-
-    // eslint-disable-next-line no-use-before-define
-    return request.then(res => dispatch(getCountrySuccess(res.data)));
-  }
-};
 
 export const getCountrySuccess = (data) => {
   const { country } = data;
@@ -36,7 +19,7 @@ export const getCountrySuccess = (data) => {
     case 'BR':
       i18n.changeLanguage('pt_br');
       break;
-    case 'EN':
+    case 'US':
       i18n.changeLanguage('es_en');
       break;
     default:
@@ -48,4 +31,18 @@ export const getCountrySuccess = (data) => {
     country,
     countryData,
   };
+};
+
+export const getCountry = () => (dispatch) => {
+  const { countryReducer } = store.getState();
+
+  if (countryReducer.country.length === 0) {
+    dispatch({
+      type: GET_COUNTRY,
+    });
+
+    axios.get(urlCity)
+      .then(({ data }) => dispatch(getCountrySuccess(data)))
+      .catch(error => console.log(error));
+  }
 };

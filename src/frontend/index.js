@@ -6,7 +6,7 @@ import { I18nextProvider } from 'react-i18next';
 import { createBrowserHistory } from 'history';
 import store from './redux/store';
 import Routes from './routes/App';
-import i18n from './i18n';
+import i18n from './utils/i18n';
 import '@babel/polyfill';
 
 if (typeof window !== 'undefined') {
