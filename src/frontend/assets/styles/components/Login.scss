@@ -27,12 +27,16 @@
     }
   }
 
+  .separate-register {
+    margin: 0px 3px;
+  }
+
   .left {
     color: #FFFFFF;
     overflow: hidden;
     width: 100%;
     margin-top: 100px;
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o/footer.png?alt=media&token=7ed77f8a-03e3-403e-83de-8a8ab3e55377');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o/mobile.png?alt=media&token=25c0a91a-2375-489d-86e7-5c86daa429ae');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: linear-gradient(135deg, $blue-aero-happy-bg 10%, $purple-areo-happy 100%);
@@ -45,6 +49,10 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: -1px 3px 7px -2px rgba(0, 0, 0, 0.75);
+
+    .login-form {
+      text-align: left;
+    }
 
     @media (max-width: $large-size) {
       width: 100%;
@@ -60,8 +68,16 @@
       color: $grey-font-aero-happy;
     }
 
+    label {
+      color: $font-ligth-grey;
+    }
+
     .inputs {
       overflow: hidden;
+    }
+
+    .login-form {
+      margin-top: 16px;
     }
 
     input {
@@ -70,10 +86,11 @@
       border-radius: 10px;
       width: 100%;
       padding: 10px;
-      margin-top: 25px;
       font-size: 16px;
       outline: none;
       transition: 1s;
+      font-weight: bold;
+      background: transparent;
 
       &:hover {
         border: 2px solid $blue-aero-happy-bg;
@@ -109,6 +126,7 @@
     }
 
     .button-social {
+      border: none;
       width: 100%;
       margin: 5px;
       cursor: pointer;

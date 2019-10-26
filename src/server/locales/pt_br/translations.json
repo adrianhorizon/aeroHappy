@@ -4,6 +4,8 @@
   "AERO_HAPPY": "Aero Happy",
   "REQUIRED_FIELD": "Este campo é obrigatório",
   "LOGIN": {
+    "TITLE_HELMET_LOGIN": "Ingresa a aerohappy",
+    "TITLE_HELMET_REGISTER": "Registrate con aerohappy",
     "FOR_SALES": "Para vendas",
     "SIGN_IN": "Iniciar sessão",
     "SIGN_IN_SOCIAL": "Entrar com",
