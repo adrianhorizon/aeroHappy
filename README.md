@@ -10,13 +10,17 @@
 
 ## Install project
 
-- npm i || yarn
-- npm run dev
+- npm i or yarn
+- npm start:dev or yarn start:dev
+
+## Docker compile
+
+- docker build --rm -f "dockerfile" -t aerohappy:latest .
+- docker run -p 4000:4000 aerohappy
 
 ## Deployment - Digital ocena
 
 -- requirements
 
+- ´Nodejs´
 - ´Docker´
-- ´Ngnix´
-- ´Jenkins´
