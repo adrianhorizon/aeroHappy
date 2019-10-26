@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import webpack from 'webpack';
 import helmet from 'helmet';
 import main from './routes/main';
-import i18n from '../frontend/i18n';
+import i18n from '../frontend/utils/i18n';
 
 const i18nextMiddleware = require('i18next-express-middleware');
 const Backend = require('i18next-node-fs-backend');
