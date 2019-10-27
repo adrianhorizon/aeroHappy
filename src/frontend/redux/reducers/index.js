@@ -1,4 +1,4 @@
-import TYPES from '../../utils/Types';
+import TYPES from '../../utils/types';
 
 const initialState = {
   pending: true,

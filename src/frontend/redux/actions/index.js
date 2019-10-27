@@ -1,7 +1,7 @@
 import axios from 'axios';
 import store from '../store';
 import i18n from '../../utils/i18n';
-import TYPES from '../../utils/Types';
+import TYPES from '../../utils/types';
 
 const urlCity = 'https://ipapi.co/json/';
 

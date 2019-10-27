@@ -27,7 +27,7 @@ const render = (html, preloadedState, req) => {
     initialI18nStore[res] = req.i18n.services.resourceStore.data[res];
   });
 
-  const initialLanguage = req.i18n.language;
+  const initialLanguage = 'es_mx';
 
   return (`
   <!DOCTYPE html>
