@@ -16,7 +16,7 @@ if (isProd) {
   const files = getManifest();
   srcs.mainCss = files['main.css'];
   srcs.mainJs = files['main.js'];
-  srcs.vendorJs = files['vendor.js'];
+  srcs.vendorJs = files['vendors.js'];
 }
 
 const render = (html, preloadedState, req) => {
