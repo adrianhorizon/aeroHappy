@@ -1,42 +1,39 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
-class Country extends Component {
+export const countryFlag = (value) => {
+  const url = 'https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o';
 
-  countryFlag = (value) => {
-    switch (value) {
-      case 'CO':
-        return 'https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o/flags%2Fcolombia.png?alt=media&token=0527ce06-7301-472d-a24a-ccbc914fd509';
+  switch (value) {
+    case 'CO':
+      return `${url}/flags%2Fcolombia.png?alt=media`;
 
-      case 'BR':
-        return 'https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o/flags%2Fbrasil.png?alt=media&token=060de182-d2dd-4035-b853-bb5b4c8174e8';
+    case 'BR':
+      return `${url}/flags%2Fbrasil.png?alt=media`;
 
-      case 'MX':
-        return 'https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o/flags%2Fmexico.png?alt=media&token=821d107a-b5a2-4089-8d90-72890b3ef934';
+    case 'MX':
+      return `${url}/flags%2Fmexico.png?alt=media`;
 
-      case 'US':
-        return 'https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o/flags%2Festados-unidos-de-america.png?alt=media&token=1db500c8-f92d-47d4-a78c-5c67fd8e773d';
+    case 'US':
+      return `${url}/flags%2Festados-unidos-de-america.png?alt=media`;
 
-      default:
-        return 'https://firebasestorage.googleapis.com/v0/b/aero-happy.appspot.com/o/flags%2Fcolombia.png?alt=media&token=0527ce06-7301-472d-a24a-ccbc914fd509';
-    }
-  };
-
-  render() {
-    const { country } = this.props;
-    return (
-      <img
-        className="image-country"
-        src={this.countryFlag(country)}
-        alt="country"
-      />
-    );
+    default:
+      return `${url}/flags%2Fcolombia.png?alt=media`;
   }
-}
+};
 
-const stateToProps = ({ countryReducer }) => ({
-  country: countryReducer.country,
-  countryData: countryReducer.countryData,
+const Country = ({ countryData }) => (
+  <>
+    <img
+      className="image-country"
+      src={countryFlag(countryData)}
+      alt="country"
+    />
+  </>
+);
+
+const stateToProps = ({ reducer }) => ({
+  countryData: reducer.countryData,
 });
 
 export default connect(stateToProps, {})(Country);

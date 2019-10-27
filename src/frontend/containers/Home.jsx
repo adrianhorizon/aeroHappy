@@ -22,9 +22,9 @@ class Home extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ reducer }) => {
   return {
-    country: state.countryReducer.country,
+    country: reducer.country,
   };
 };
 

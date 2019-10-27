@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withNamespaces } from 'react-i18next';
 import { connect } from 'react-redux';
-import { loginRequest } from '../redux/actions/loginAction';
+import { loginRequest } from '../redux/actions';
 import Country from '../components/Country';
 import RegisterForm from '../components/RegisterForm';
 import ContainerSeo from '../layout/ContainerSeo';

@@ -61,6 +61,9 @@ const config = {
         ],
       },
     }),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(dotenv.config().parsed),
+    }),
     new MiniCssExtractPlugin({
       filename: isProd ? 'assets/app-[hash].css' : 'assets/app.css',
     }),

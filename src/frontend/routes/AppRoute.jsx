@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getCountry } from '../redux/actions/countryAction';
+import { getCountry } from '../redux/actions';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -34,11 +34,11 @@ class AppRoute extends Component {
   }
 }
 
-const stateToProps = ({ countryReducer }) => ({
-  pending: countryReducer.pending,
-  country: countryReducer.country,
-  cityId: countryReducer.cityId,
-  countryData: countryReducer.countryData,
+const stateToProps = ({ reducer }) => ({
+  pending: reducer.pending,
+  country: reducer.country,
+  cityId: reducer.cityId,
+  countryData: reducer.countryData,
 });
 
 export default connect(
