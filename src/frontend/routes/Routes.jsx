@@ -33,6 +33,7 @@ const stateToProps = ({ reducer }) => ({
   country: reducer.country,
   cityId: reducer.cityId,
   countryData: reducer.countryData,
+  offers: reducer.offers,
 });
 
 export default connect(

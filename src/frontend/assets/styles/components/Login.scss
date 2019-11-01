@@ -135,6 +135,7 @@
       padding: 10px;
       font-weight: bold;
       transition: 1s;
+      text-decoration: none;
     }
 
     i {
@@ -152,13 +153,13 @@
       }
     }
 
-    .instagram {
-      background: $color-play-store;
+    .facebook {
+      background: $color-facebook;
       color: #fff;
 
       &:hover {
         border: none;
-        color: $color-play-store;
+        color: $color-facebook;
         background: transparent;
       }
     }
