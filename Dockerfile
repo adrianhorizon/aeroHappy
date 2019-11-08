@@ -9,6 +9,7 @@ RUN yarn
 # npm i
 
 # Bundle project
+# COPY nginx.conf /etc/nginx/nginx.conf
 COPY . .
 
 ENV PORT 4000

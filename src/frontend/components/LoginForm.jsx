@@ -3,6 +3,14 @@ import { withNamespaces } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import '../assets/styles/components/Login.scss';
 
+const handlePageChange = () => {
+  window.location.href = 'auth/facebook';
+};
+
+const handlePageChangeTwitter = () => {
+  window.location.href = 'auth/twitter';
+};
+
 const LoginForm = (props) => {
   return (
     <div>
@@ -43,11 +51,11 @@ const LoginForm = (props) => {
         <div className="container-button-social">
           <p className="container-social-title">or</p>
           <hr />
-          <button type="button" className="button-social instagram">
-            <i className="fab fa-google fa-lg" aria-hidden="true" />
-            {props.t('LOGIN.SIGN_IN_SOCIAL')} Google
+          <button type="button" onClick={handlePageChange} className="button-social facebook">
+            <i className="fab fa-facebook-square fa-lg" aria-hidden="true" />
+            {props.t('LOGIN.SIGN_IN_SOCIAL')} Facebook
           </button>
-          <button type="button" className="button-social twitter">
+          <button type="button" onClick={handlePageChangeTwitter} className="button-social twitter">
             <i className="fab fa-twitter-square fa-lg" aria-hidden="true" />
             {props.t('LOGIN.SIGN_IN_SOCIAL')} Twitter
           </button>
