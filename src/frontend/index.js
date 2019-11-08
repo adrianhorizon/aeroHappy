@@ -5,7 +5,7 @@ import { Router } from 'react-router';
 import { I18nextProvider } from 'react-i18next';
 import { createBrowserHistory } from 'history';
 import store from './redux/store';
-import Routes from './routes/App';
+import Routes from './routes/Routes';
 import i18n from './utils/i18n';
 import '@babel/polyfill';
 

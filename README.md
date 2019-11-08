@@ -15,12 +15,16 @@
 
 ## Docker compile
 
-- docker build --rm -f "dockerfile" -t aerohappy:latest .
+- docker build --rm -f "Dockerfile" -t aerohappy:latest .
 - docker run -p 4000:4000 aerohappy
 
-## Deployment - Digital ocena
+## Docker compose
+
+- docker-compose build
+- docker-compose up
 
 -- requirements
 
 - ´Nodejs´
 - ´Docker´
+- ´MongoDB´

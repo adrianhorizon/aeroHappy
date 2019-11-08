@@ -39,11 +39,11 @@ const config = {
           chunks: 'all',
           reuseExistingChunk: true,
           priority: 1,
-          filename: isProd ? 'assets/vendors-[hash].js' : 'assets/vendors.js',
+          filename: isProd ? 'assets/vendor-[hash].js' : 'assets/vendor.js',
           enforce: true,
           test(module, chunks) {
             const name = module.nameForCondition && module.nameForCondition();
-            return chunks.some(chunks => chunks.name !== 'vendors' && /[\\/]node_modules[\\/]/.test(name));
+            return chunks.some(chunks => chunks.name !== 'vendor' && /[\\/]node_modules[\\/]/.test(name));
           },
         },
       },

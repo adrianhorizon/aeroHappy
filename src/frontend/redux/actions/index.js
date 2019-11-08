@@ -5,6 +5,25 @@ import TYPES from '../../utils/types';
 
 const urlCity = 'https://ipapi.co/json/';
 
+export const setItemsLoading = () => {
+  return {
+    type: TYPES.ITEMS_LOADING,
+  };
+};
+
+export const returnErrors = (msg, status, id = null) => {
+  return {
+    type: TYPES.GET_ERRORS,
+    payload: { msg, status, id },
+  };
+};
+
+export const clearErrors = () => {
+  return {
+    type: TYPES.CLEAR_ERRORS,
+  };
+};
+
 export const getCountrySuccess = ({ country }) => {
   const countryData = process.env.COUNTRY_ENV || country.toUpperCase();
 
@@ -52,38 +71,14 @@ export const registerRequest = payload => ({
   payload,
 });
 
-export const registerUser = (payload, redirecUrl) => {
-  return (dispatch) => {
-    axios.post('/auth/sign-up', payload)
-      .then(({ data }) => dispatch(registerRequest(data)))
-      .then(() => {
-        window.location.href = redirecUrl;
-      })
-      .catch(err => dispatch(setError(err)));
-  };
-};
-
-export const loginUser = ({ email, password }, redirecUrl) => {
-  return (dispatch) => {
-    axios({
-      url: '/auth/sign-in',
-      method: 'post',
-      auth: {
-        username: email,
-        password,
-      },
-    })
-      .then(({ data }) => {
-        document.cookie = `email=${data.email}`;
-        document.cookie = `name=${data.name}`;
-        document.cookie = `id=${data.id}`;
-        dispatch(loginRequest(data));
-      })
-      .then(() => {
-        window.location.href = redirecUrl;
-      })
-      .catch(err => dispatch(setError(err)));
-  };
+export const getItems = () => (dispatch) => {
+  dispatch(setItemsLoading());
+  axios.get('/api/offers')
+    .then(res => dispatch({
+      type: TYPES.GET_ITEMS,
+      payload: res.data.data,
+    }))
+    .catch(err => dispatch(returnErrors(err.response.data, err.response.status)));
 };
 
 export const getCountry = () => (dispatch) => {
@@ -95,6 +90,6 @@ export const getCountry = () => (dispatch) => {
 
     axios.get(urlCity)
       .then(({ data }) => dispatch(getCountrySuccess(data)))
-      .catch(err => console.log(err));
+      .catch(err => dispatch(returnErrors(err.response.data, err.response.status)));
   }
 };

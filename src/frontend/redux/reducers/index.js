@@ -1,11 +1,12 @@
 import TYPES from '../../utils/types';
 
 const initialState = {
-  pending: true,
+  loading: false,
   country: '',
-  cityId: 1,
+  cityId: '',
   countryData: {},
   user: {},
+  offers: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -13,7 +14,7 @@ const reducer = (state = initialState, action) => {
     case TYPES.SET_COUNTRY:
       return {
         ...state,
-        pending: false,
+        loading: false,
         country: action.country,
         countryData: action.countryData,
       };
@@ -36,6 +37,16 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         user: action.payload,
+      };
+    case TYPES.GET_ITEMS:
+      return {
+        ...state,
+        offers: action.payload,
+      };
+    case TYPES.ITEMS_LOADING:
+      return {
+        ...state,
+        loading: true,
       };
     default:
       return state;
